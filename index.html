@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBORG 2077 – Human × Machine Evolution</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore the future of human-machine cybernetic evolution. Experience high-tech neural interfaces, advanced cyber vision, and quantum-powered artificial intelligence.">
+  <meta name="keywords" content="cyborg, cybernetics, artificial intelligence, neural interface, cyber vision, technology evolution, 2077">
+  <meta name="author" content="Antigravity Dev Team">
+  <meta name="robots" content="index, follow">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- AOS (Animate on Scroll) Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Background Overlay & Particle Canvas -->
+  <div class="cyber-bg-overlay"></div>
+  <div class="cyber-scanlines"></div>
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Cybernetic Custom Cursor Crosshair -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+
+  <!-- HUD Top Navigation Bar -->
+  <header id="hud-header">
+    <div class="logo-container">
+      <div class="logo-mark"></div>
+      <div class="logo-text">CYBORG 2077</div>
+    </div>
+    
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-anchor">Home</a></li>
+        <li><a href="#about" class="nav-anchor">Lore</a></li>
+        <li><a href="#features" class="nav-anchor">Upgrades</a></li>
+        <li><a href="#stats" class="nav-anchor">Metrics</a></li>
+        <li><a href="#tech" class="nav-anchor">Showcase</a></li>
+        <li><a href="#timeline" class="nav-anchor">Timeline</a></li>
+        <li><a href="#contact" class="nav-anchor">Network</a></li>
+      </ul>
+    </nav>
+
+    <div class="hud-status">
+      <span class="status-dot"></span>
+      <span id="hud-status-text">NEURAL LINK: ESTABLISHED</span>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+      <div class="hero-pretitle">System Initialization v4.82</div>
+      <h1 class="hero-title">CYBORG 2077</h1>
+      <div class="hero-tagline">The Future Is No Longer Human.</div>
+      <p class="hero-desc">
+        Explore the next generation of human-machine evolution. Seamlessly fuse your consciousness with state-of-the-art cybernetic augmentations, neural AI layers, and quantum architectures. Redefine the limits of mortality.
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn-cyber primary">Explore Future</a>
+        <a href="#contact" class="btn-cyber secondary">Join Evolution</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+      <div class="cyber-portal"></div>
+      <img src="assets/cyborg.png" alt="Cybernetic Human Evolution - Cyborg 2077" class="hero-cyborg-img">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
+      <span class="section-label">01 // Historical Transition</span>
+      <h2 class="section-title">Humanity Re-Engineered</h2>
+      <p class="about-text">
+        Humanity has entered a new era where artificial intelligence, robotics, and cybernetic enhancements redefine the limits of human potential.
+      </p>
+      <p class="about-desc">
+        We are no longer bound by organic constraints. Through biological transhumanism, we enhance our sensory perception, physical strength, and mental computation speeds. By bridging cellular matter and quantum matrices, Cyborg 2077 offers a flawless convergence of soul and silicon.
+      </p>
+      
+      <ul class="cyber-specs-list">
+        <li><span class="specs-icon"></span> Bio-Compatible Substrates</li>
+        <li><span class="specs-icon"></span> Synaptic Accelerator Cores</li>
+        <li><span class="specs-icon"></span> Nanite Cell Regeneration</li>
+        <li><span class="specs-icon"></span> Real-Time AI Splicing</li>
+      </ul>
+    </div>
+    
+    <div class="about-visual-container" data-aos="zoom-in" data-aos-duration="1200">
+      <div class="about-visual">
+        <div class="about-grid-overlay"></div>
+        <div class="hud-data-circle"></div>
+        <div class="hud-scanline"></div>
+        <div class="hud-text-display">
+          [SYS_LOG] CORE: ONLINE<br>
+          [SYS_LOG] TEMP: 36.4°C (BIO)<br>
+          [SYS_LOG] RADAR: ACQUIRING TARGETS...<br>
+          [SYS_LOG] SECURE: SSH_TUNNEL_ESTABLISHED
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <span class="section-label" data-aos="fade-up">02 // Augmented Capabilities</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Evolutionary Upgrades</h2>
+    
+    <div class="features-grid">
+      
+      <!-- Card 1 -->
+      <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Neural Interface</h3>
+        <p class="feature-desc">Connect your mind directly with artificial intelligence systems, bypassing organic sensory limits for instantaneous thoughts and downloads.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Cyber Vision</h3>
+        <p class="feature-desc">Enhanced visual capabilities powered by machine learning, supporting tactical HUD overlays, thermal scanning, and digital zooming.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Bio Enhancement</h3>
+        <p class="feature-desc">Upgrade physical performance beyond natural limits using high-density synthetic muscles and automated metabolic regulating nodes.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Quantum Processing</h3>
+        <p class="feature-desc">Experience next-generation computational intelligence. Simulate complex neural scenarios and solve algorithms at atomic scale.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI Statistics Section -->
+  <section class="statistics" id="stats">
+    <div class="stats-grid">
+      
+      <!-- Counter 1 -->
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-number" id="stat-efficiency" data-target="95">0%</div>
+        <div class="stat-label">Human Efficiency</div>
+        <div class="stat-accent-bar"></div>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-number" id="stat-accuracy" data-target="99.9">0%</div>
+        <div class="stat-label">Neural Accuracy</div>
+        <div class="stat-accent-bar"></div>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-number" id="stat-connections" data-target="500">0</div>
+        <div class="stat-label">Data Connections (M)</div>
+        <div class="stat-accent-bar"></div>
+      </div>
+
+      <!-- Counter 4 -->
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="stat-number" id="stat-uptime" data-target="24">0</div>
+        <div class="stat-label">AI Assistance (hrs)</div>
+        <div class="stat-accent-bar"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technology Showcase -->
+  <section class="tech-showcase" id="tech">
+    <span class="section-label" data-aos="fade-up">03 // Technical Blueprint</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Showcase Laboratory</h2>
+    
+    <div class="tech-grid">
+      <div class="tech-options" data-aos="fade-right" data-aos-duration="1000">
+        
+        <div class="tech-option-item active" data-target="tech-synapses">
+          <div class="tech-option-num">01</div>
+          <div>
+            <h4 class="tech-option-title">Synthetic Synapses</h4>
+            <p class="tech-option-desc">Accelerate conscious response times to 0.1 nanoseconds.</p>
+          </div>
+        </div>
+
+        <div class="tech-option-item" data-target="tech-optics">
+          <div class="tech-option-num">02</div>
+          <div>
+            <h4 class="tech-option-title">Chroma-Shift Optics</h4>
+            <p class="tech-option-desc">Scan dynamic wavelengths from electromagnetic spectrums.</p>
+          </div>
+        </div>
+
+        <div class="tech-option-item" data-target="tech-nanites">
+          <div class="tech-option-num">03</div>
+          <div>
+            <h4 class="tech-option-title">Nano-Repair Core</h4>
+            <p class="tech-option-desc">Automated self-healing synthetic tissue generators.</p>
+          </div>
+        </div>
+
+        <div class="tech-option-item" data-target="tech-reactors">
+          <div class="tech-option-num">04</div>
+          <div>
+            <h4 class="tech-option-title">Sub-Atomic Reactor</h4>
+            <p class="tech-option-desc">Infinite fusion power supply to maintain augmentations.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-display-panel glass-panel" data-aos="fade-left" data-aos-duration="1000">
+        
+        <!-- Screen 1: Synapses -->
+        <div class="tech-display-screen active" id="tech-synapses">
+          <div class="tech-display-header">
+            <h4>[SYNAPSE_CORE_v2]</h4>
+            <div class="tech-display-status">ACTIVE // OPTIMIZED</div>
+          </div>
+          <div class="tech-display-visual">
+            <div class="tech-circle-ring">
+              <div class="tech-inner-core">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="tech-display-footer">
+            Integrated neural nodes bridge biological axons and silicon pathways. High-speed signal processing provides up to 10,000x human comprehension thresholds.
+          </div>
+        </div>
+
+        <!-- Screen 2: Optics -->
+        <div class="tech-display-screen" id="tech-optics">
+          <div class="tech-display-header">
+            <h4>[CHROMA_OPTIC_OS]</h4>
+            <div class="tech-display-status">ACTIVE // SCANNING</div>
+          </div>
+          <div class="tech-display-visual">
+            <div class="tech-circle-ring" style="border-color: var(--purple);">
+              <div class="tech-inner-core" style="box-shadow: 0 0 30px rgba(0, 245, 255, 0.4); background: rgba(0, 245, 255, 0.15);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="tech-display-footer">
+            Augmenting physical optical tracks with multi-spectrum micro-lenses. Offers crystal-clear visual parsing, live target tracking, and infrared overlay.
+          </div>
+        </div>
+
+        <!-- Screen 3: Nanites -->
+        <div class="tech-display-screen" id="tech-nanites">
+          <div class="tech-display-header">
+            <h4>[NANO_HEAL_SYS]</h4>
+            <div class="tech-display-status">ACTIVE // SLEEP</div>
+          </div>
+          <div class="tech-display-visual">
+            <div class="tech-circle-ring">
+              <div class="tech-inner-core">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0110.2 21a3.745 3.745 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.746 3.746 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0113.8 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="tech-display-footer">
+            Programmable molecular-scale nanites swim directly within biological vascular systems, repairing cellular damage, preventing viruses, and patching tissue.
+          </div>
+        </div>
+
+        <!-- Screen 4: Reactors -->
+        <div class="tech-display-screen" id="tech-reactors">
+          <div class="tech-display-header">
+            <h4>[SUB_ATOM_FUSION]</h4>
+            <div class="tech-display-status">ACTIVE // HIGH POWER</div>
+          </div>
+          <div class="tech-display-visual">
+            <div class="tech-circle-ring" style="border-color: var(--purple);">
+              <div class="tech-inner-core" style="box-shadow: 0 0 30px rgba(0, 245, 255, 0.4); background: rgba(0, 245, 255, 0.15);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.879M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="tech-display-footer">
+            Harnessing the immense clean power of micro sub-atomic cold fusion. Offers constant, safe, lifelong energy directly to high-capacity limbs.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section" id="timeline">
+    <span class="section-label" data-aos="fade-up">04 // Evolution Ledger</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Evolution Roadmap</h2>
+    
+    <div class="timeline-container">
+      
+      <!-- Milestone 1 -->
+      <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2026</div>
+        <div class="timeline-content glass-panel">
+          <h3>AI Revolution</h3>
+          <p>Global quantum systems supersede human computational skills. Basic smart companion automation begins managing industrial networks.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 2 -->
+      <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2035</div>
+        <div class="timeline-content glass-panel">
+          <h3>Neural Interfaces</h3>
+          <p>The first successful biological computer connection is established. Humans begin accessing dynamic clouds with simple thought prompts.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 3 -->
+      <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2045</div>
+        <div class="timeline-content glass-panel">
+          <h3>Cyber Integration</h3>
+          <p>Sleek bionic prosthetic upgrades surpass biological efficiency. Cybernetic optics and muscle cores become standard medical integration.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 4 -->
+      <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000">
+        <div class="timeline-node"></div>
+        <div class="timeline-date">2077</div>
+        <div class="timeline-content glass-panel">
+          <h3>Complete Evolution</h3>
+          <p>Biological nodes integrate completely with quantum clouds. Organic bodies are fully upgradeable, entering the transhumanist singularity.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <span class="section-label" data-aos="fade-up">05 // Synapse Request</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Establish Neural Link</h2>
+    
+    <div class="contact-wrapper glass-panel" data-aos="zoom-in" data-aos-duration="1000">
+      
+      <!-- Tech Panel Corners -->
+      <div class="cyber-panel-corner corner-tl"></div>
+      <div class="cyber-panel-corner corner-tr"></div>
+      <div class="cyber-panel-corner corner-bl"></div>
+      <div class="cyber-panel-corner corner-br"></div>
+
+      <form id="cyber-contact-form">
+        
+        <div class="form-group">
+          <input type="text" id="contact-name" class="form-input" placeholder=" " required autocomplete="off">
+          <label for="contact-name" class="form-label">Upgrade Operator Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="contact-email" class="form-input" placeholder=" " required autocomplete="off">
+          <label for="contact-email" class="form-label">Neural Email Address</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="contact-message" class="form-input" placeholder=" " required></textarea>
+          <label for="contact-message" class="form-label">Evolution Specifications</label>
+        </div>
+
+        <button type="submit" class="btn-cyber primary" style="width: 100%;">Connect to Network</button>
+
+      </form>
+
+      <!-- Terminal Response Simulator -->
+      <div class="terminal-response" id="terminal-response">
+        [SYS_TERMINAL_OUT]: INITIALIZING DEEP CONNECTION LINK...<br>
+        [SYS_TERMINAL_OUT]: EXPORTING SYNAPTIC IDENTITY TO MAINNET...<br>
+        [SYS_TERMINAL_OUT]: CONNECTION ESTABLISHED. WELCOME TO THE FUTURE.
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      
+      <div class="footer-brand">
+        <div class="logo-mark"></div>
+        <div class="logo-text">CYBORG 2077</div>
+      </div>
+      
+      <ul class="footer-links">
+        <li><a href="#hero" class="nav-anchor">Home</a></li>
+        <li><a href="#about" class="nav-anchor">Lore</a></li>
+        <li><a href="#features" class="nav-anchor">Upgrades</a></li>
+        <li><a href="#tech" class="nav-anchor">Showcase</a></li>
+        <li><a href="#timeline" class="nav-anchor">Timeline</a></li>
+      </ul>
+
+      <!-- Simulated Dynamic Footer Terminal System Logs -->
+      <div class="footer-terminal">
+        <div class="footer-terminal-header">
+          <span>CONSOLE LOG // STATUS: STABLE</span>
+          <div class="terminal-accent-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="terminal-line">&gt; <span class="cyan">systemctl</span> status network-interface</div>
+        <div class="terminal-line">&gt; STATUS: <span class="green">SYNAPSE CONNECTED</span> (LATENCY: 0.12ms)</div>
+        <div class="terminal-line">&gt; UPTIME: <span class="cyan">99.98%</span> // STABILIZER: OK</div>
+        <div class="terminal-line">&gt; HOSTNAME: <span class="cyan">MAINNET-NODE-2077</span></div>
+      </div>
+
+      <div class="footer-copyright">
+        © 2077 CYBORG EVOLUTION CORPORATION. THE FUTURE IS NO LONGER HUMAN.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- AOS Scroll Animation JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  <!-- Custom Application Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
